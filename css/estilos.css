@@ -23,7 +23,7 @@ html {
 
 .fondo-redondeado {
   width: 120rem;
-  height: 100rem;
+  height: 95rem;
   border-radius: 10%;
   background: linear-gradient(225deg, #ff900b, #ff505b);
   position: absolute;
