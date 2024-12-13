@@ -21,6 +21,11 @@ html {
   transition: all 0.1s;
 }
 
+/* Para el cambio del switch */
+.switch.contenedor {
+  background-color: #262431;
+}
+
 .fondo-redondeado {
   width: 120rem;
   height: 95rem;
@@ -33,6 +38,12 @@ html {
   box-shadow: 0 1rem 5rem rgba(248, 106, 59, 0.2);
 }
 
+/* Para el cambio del switch */
+.switch .fondo-redondeado {
+  background: linear-gradient(225deg, #93cdff, #3c3a74);
+  box-shadow: 0 1rem 5rem rgba(60, 58, 115, 0.5);
+}
+
 .envoltura-formulario {
   width: 80rem;
   height: 60rem;
@@ -43,6 +54,11 @@ html {
   position: relative;
   z-index: 100;
   transition: all 0.1s;
+}
+
+/* Para el cambio del switch */
+.switch .envoltura-formulario {
+  background-color: #262431;
 }
 
 .envoltura-formulario-izquierda {
@@ -59,8 +75,36 @@ html {
   height: 12rem;
   background: linear-gradient(225deg, #ff900b, #ff505b);
   border-radius: 50%;
+
+  /* Para el cambio del switch */
+  position: relative;
 }
 
+/* Para el cambio del switch */
+.switch .sol-luna {
+  background: linear-gradient(225deg, #93cdff, #3c3a74);
+  box-shadow: none;
+}
+
+/* Para el cambio del switch */
+.sol-luna::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+/* Para el cambio del switch */
+.switch .sol-luna::after {
+  background-color: #262431;
+  transform: scale(1);
+}
 .envoltura-formulario-izquierda button {
   width: 20rem;
   height: 4rem;
@@ -70,6 +114,12 @@ html {
   font-size: 1.5rem;
   cursor: pointer;
   position: relative;
+}
+
+/* Para el cambio del switch */
+.switch .envoltura-formulario-izquierda button {
+  background-color: #1e1c28;
+  color: #bbb;
 }
 
 .envoltura-formulario-izquierda button span {
@@ -84,6 +134,12 @@ html {
   border-radius: 3rem;
   left: 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Para el cambio del switch */
+.switch .fondo {
+  transform: translateX(100%);
+  background-color: #34323e;
 }
 
 .dia,
@@ -123,6 +179,11 @@ html {
   background-color: transparent;
 }
 
+/* Para el cambio del switch */
+.switch .campo {
+  color: #bbb;
+}
+
 .campo::placeholder {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -146,4 +207,10 @@ html {
   letter-spacing: 0.1rem;
   cursor: pointer;
   box-shadow: 0 1erm 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* Para el cambio del switch */
+.switch .envoltura-formulario-derecha button {
+  background-color: #bbb;
+  color: #262431;
 }
